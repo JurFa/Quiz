@@ -1,4 +1,4 @@
-function clicktext() {
+function clicktext() {                                   // <--- "Text" buttons.
   let t = document.getElementById("text");
   if (t.style.display === "none") {
     t.style.display = "block";
@@ -25,10 +25,10 @@ function clicktext2() {
   }
 }
 
-const form = document.getElementById("quiz");
+const form = document.getElementById("quiz");        
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+form.addEventListener("submit", (event) => {                               // <--- "Answer" button. With different text.
+  event.preventDefault(); 
   let selOpt = document.querySelector('input[name="answer"]:checked').value;
   let output = document.querySelector(".result");
   let output1 = document.querySelector(".result1");
