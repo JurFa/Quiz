@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Quiz.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <h1>Javascript - CSS - HTML</h1>
+    <h2>Quiz</h2>
+    <div class="container">
+      <form id="quiz">
+        <p>Question N1:</p>
+        <audio class="sound" controls>
+          <source src="images/quest1.mp3" type="audio/mp3" />
+        </audio>
+        <button type="button" class="text-btn" onclick="clicktext()">
+          Text
+        </button>
+        <p id="text">Inside which HTML element do we put the JavaScript?</p>
+        <ul>
+          <input type="radio" id="js" name="answer" value="js" />
+          js
+        </ul>
+        <ul>
+          <input type="radio" id="script" name="answer" value="script" />
+          script
+        </ul>
+        <ul>
+          <input type="radio" id="scripting" name="answer" value="scripting" />
+          scripting
+        </ul>
+        <ul>
+          <input
+            type="radio"
+            id="javascript"
+            name="answer"
+            value="javascript"
+          />
+          javascript
+        </ul>
+        <button class="answer-btn" type="submit">Answer</button>
+        <p id="result" class="result"></p>
+        <p>Question N2:</p>
+        <audio class="sound" controls>
+          <source src="images/cssquest1.mp3" type="audio/mp3" />
+        </audio>
+        <button type="button" class="text-btn" onclick="clicktext1()">
+          Text
+        </button>
+        <p id="text1">Which HTML attribute is used to define inline styles?</p>
+        <ul>
+          <input type="radio" id="class" name="answer" value="class" />
+          class
+        </ul>
+        <ul>
+          <input type="radio" id="styles" name="answer" value="styles" />
+          styles
+        </ul>
+        <ul>
+          <input type="radio" id="style" name="answer" value="style" />
+          style
+        </ul>
+        <ul>
+          <input type="radio" id="font" name="answer" value="font" />
+          font
+        </ul>
+        <button class="answer-btn" type="submit">Answer</button>
+        <p class="result1"></p>
+        <p>Question N3:</p>
+        <audio class="sound" controls>
+          <source src="images/htmlquest1.mp3" type="audio/mp3" />
+        </audio>
+        <button type="button" class="text-btn" onclick="clicktext2()">
+          Text
+        </button>
+        <p id="text2">Which HTML element defines the title of a document?</p>
+        <ul>
+          <input type="radio" id="title" name="answer" value="title" />
+          title
+        </ul>
+        <ul>
+          <input type="radio" id="head" name="answer" value="head" />
+          head
+        </ul>
+        <ul>
+          <input type="radio" id="meta" name="answer" value="meta" />
+          meta
+        </ul>
+        <ul>
+          <button class="answer-btn" type="submit">Answer</button>
+        <p class="result2"></p>
+      </form>
+    </div>
+  </body>
+  <script src="Quiz.js"></script>
+</html>
